@@ -31,7 +31,7 @@ B.	Girdi olarak alınan noktanın bir kümeye dahil olduğunu veya bu noktanın 
 
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/163344e1-9cdd-497a-824a-616295284f0c)
 
-<h1>SORU 2</h1>
+<h1>2.</h1>
 Hiyarerşik kümelede bağlantı türü olarak ‘ward’, k-means algoritmasına en yakın değeri vermektedir. Aşağıdaki görselleştirmede de görünmektedir.  
  
 
