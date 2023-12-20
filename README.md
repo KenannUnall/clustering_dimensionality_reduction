@@ -1,4 +1,4 @@
-<h1> Örnek 1/h1>
+<h1>1.</h1>
 Random olarak oluşturulan veri seti toplam 1000 adet veri ve 2 adet özellikten oluşmaktadır. Veri seti 4 farklı küme olacak şeklinde oluşturulmuştur. Verilerin özellikleri yönünden dağılımları aşağıdaki gibidir. 
  ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/8031bf85-93a9-4de5-87e5-200c51e228b1)
 
