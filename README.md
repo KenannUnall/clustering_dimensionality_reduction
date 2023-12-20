@@ -149,7 +149,9 @@ Sonrasında, V matrisi oluşturulur. V = Vh satırı, Vh matrisini V matrisine a
 <h1>5.</h1>
 Bu kısımda kullanılan veri seti 4. Soruda kullanılan veri seti ile aynıdır.	
 <br/>
+
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/29b8b3d1-9732-4795-800c-304ce51ab14d)
+
 <br/>
 Bu kısımda n_neigbors değeri optimal bir değer seçilmeyince çok saçma sonuçlar elde edilmekte. Düşük olarak örneğin 3 seçildiğinde çok hatalı bir görüntü elde edilirken aynı zamanda yüksek değer seçerken de hata giderek artmaktadır. 
 Locally Linear Embedding (LLE): Veri kümesini düşük boyutlu bir uzaya dönüştürmek için kullanılan bir manifold öğrenme yöntemidir. LLE, veri noktalarının lokal yapılarını koruyarak, veri kümesinin özünü yakalamaya çalışır.
