@@ -163,7 +163,7 @@ LLE, büyük veri kümeleri için hesaplama açısından maliyetli olabilir.
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/4afd821e-ce73-41b9-904c-d62002cfb64c)
 
   
-<h1>6</h1>
+<h1>6.</h1>
 Boyut indirgeme için lle kullanılmış ve method olarak ltsa seçilmiştir.
 LLE algoritması LocallyLinearEmbedding sınıfı kullanılarak uygulanır ve veri kümesi indirgenmiş boyuta dönüştürülür. İndirgenmiş veri seti X_lle değişkenine atanır. 
 En uzak iki nokta bulunur. İndirgenmiş veri noktaları arasındaki mesafeler hesaplanır ve en uzak noktaların dizinleri (max_distance_idx) bulunur.
