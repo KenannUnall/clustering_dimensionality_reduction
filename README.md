@@ -1,4 +1,4 @@
-![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/2e3c8f22-e155-457c-9aa8-e63a3f981ffe)<h1>1.</h1>
+<h1>1.</h1>
 Random olarak oluşturulan veri seti toplam 1000 adet veri ve 2 adet özellikten oluşmaktadır. Veri seti 4 farklı küme olacak şeklinde oluşturulmuştur. Verilerin özellikleri yönünden dağılımları aşağıdaki gibidir. 
 
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/fa509fb7-7db2-4b7b-b068-923ab35b3def)
