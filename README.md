@@ -4,13 +4,16 @@ Random olarak oluşturulan veri seti toplam 1000 adet veri ve 2 adet özellikten
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/fa509fb7-7db2-4b7b-b068-923ab35b3def)
 
 
-A.	En optimal küme sayısının(k) otomatik olarak seçilme işlemini her kümeleme işlemi sonucunda elde edilen silhoette_score değerine göre gerçekleştiriyoruz.
+<h2>A.</h2>
+
+En optimal küme sayısının(k) otomatik olarak seçilme işlemini her kümeleme işlemi sonucunda elde edilen silhoette_score değerine göre gerçekleştiriyoruz.
 
 Silhoutte Skor: Kümeleme algoritmalarının performansını değerlendirmek için kullanılan bir ölçüdür. Sillhoutte skoru [-1,1] arası değer alır. Silhoutte skorunun yüksek olması verilerin kendi kümelerinde yoğunlaştığını ve diğer kümelerle bağlantılarının düşük benzerlikte olduklarını göstermektedir. 
 
 Aşağıdaki kodda 2 ile 10 değerleri arasında değer alan k için toplamda 9 silhouttte scoru elde edilmiş olup, bu skorlar arasında en yüksek değerin index değeri alınarak k değeri elde edilmiştir.
 
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/8e7b950d-fa7b-48ca-8395-6eafd6402ab4) 
+
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/68819a9a-623f-459d-8e83-1da8123a1613)
 
 
@@ -20,10 +23,13 @@ Elde ettiğimiz optimal k değerine göre kümeleme işlemi gerçekleştiriyoruz
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/bb2acc39-dd93-4173-b0bc-5994a6816ff2)
  
 Görselleştirme işleminde kümeleri ve merkezlerini scatter plot üzerinde gösterilmesi aşağıdaki gibidir.
+
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/66eefacc-49bb-40a4-98cd-c3fde637530f)
 
  
-B.	Girdi olarak alınan noktanın bir kümeye dahil olduğunu veya bu noktanın anomali olduğunun tespiti yapılmaktadır. Bu aşamada find_farhest_points fonksiyonu ile veri noktalarının merkezlere olan uzaklıkları hesaplanır ve en uzak noktaların indeksleri alınır. Classify_point fonksiyonu ile de noktanın threshold değerden büyük olup olmaması durumunda göre anomali olup olmadığı belirlenmektedir.
+<h2>B.</h2>
+
+Girdi olarak alınan noktanın bir kümeye dahil olduğunu veya bu noktanın anomali olduğunun tespiti yapılmaktadır. Bu aşamada find_farhest_points fonksiyonu ile veri noktalarının merkezlere olan uzaklıkları hesaplanır ve en uzak noktaların indeksleri alınır. Classify_point fonksiyonu ile de noktanın threshold değerden büyük olup olmaması durumunda göre anomali olup olmadığı belirlenmektedir.
 
  
  
@@ -89,7 +95,8 @@ Veri seti 3 özellikten oluştuğundan dolayı üç boyutlu görselleştirme aş
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/be6a594b-8b75-4b8e-a6a7-a81646f024c5)
 
 
-A.	Bu kısımda veri setindeki örnek sayısı, öznitelik sayısı ve S_points değerlerini güzel şekilde sunabilmek için init_printing() fonksiyonunu ve Matrix() fonksiyonları kullanılmıştır. 
+<h2>A.</h2>	
+Bu kısımda veri setindeki örnek sayısı, öznitelik sayısı ve S_points değerlerini güzel şekilde sunabilmek için init_printing() fonksiyonunu ve Matrix() fonksiyonları kullanılmıştır. 
 
 S_points.shape[0] değeri toplam örnek sayısı (n) => 1500
 S_points.shape[1] değeri toplam öznitelik sayısı (p) => 3
@@ -124,7 +131,8 @@ S matrisinin karelerinin (S*S) ve veri kümesinin satır sayısının (S_points_
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/885b2404-7d0b-47f9-84c3-0b726b96bb98)
 
 
-B.	İlk olarak, distances adında bir matris oluşturuluyor. Bu matris, S_points matrisindeki noktalar arasındaki Öklidyen uzaklıklarını içeriyor. S_points[:, np.newaxis] - S_points ifadesi, her bir noktanın diğer noktalardan farkını hesaplar. Ardından, bu farkların kareleri alınarak uzaklık matrisi oluşturulur. Son olarak, np.sqrt fonksiyonu kullanılarak uzaklık matrisinin karekökü alınır. 
+<h2>B.</h2>
+İlk olarak, distances adında bir matris oluşturuluyor. Bu matris, S_points matrisindeki noktalar arasındaki Öklidyen uzaklıklarını içeriyor. S_points[:, np.newaxis] - S_points ifadesi, her bir noktanın diğer noktalardan farkını hesaplar. Ardından, bu farkların kareleri alınarak uzaklık matrisi oluşturulur. Son olarak, np.sqrt fonksiyonu kullanılarak uzaklık matrisinin karekökü alınır. 
 Svd kullanarak matris ayırma işlemi gerçekleştiriyoruz. Ve bu sayede U, S ve Vh değerlerini elde ediyoruz. U matrisi, veri kümesinin satır uzayında temsil edilen yeni bir baz vektör kümesini, S matrisi ise veri kümesinin temel özelliklerini (özdeğerlerini) içerir. Vh matrisi ise veri kümesinin sütun uzayında temsil edilen yeni bir baz vektör kümesini içerir.
 Sonrasında, V matrisi oluşturulur. V = Vh satırı, Vh matrisini V matrisine atar. Vh matrisinin satırları, bileşenlerin yönünü temsil eder. Son olarak, mean_centered matrisi V matrisinin bileşenlerine çarpılarak veri noktaları yeni düzleme dönüştürülür. np.matmul(mean_centered, V[0,:]) satırı, mean_centered matrisini V matrisinin ilk bileşeniyle çarpar ve pca1 adında bir diziye atar. Benzer şekilde, pca2 ve pca3 dizileri de hesaplanır.
 
