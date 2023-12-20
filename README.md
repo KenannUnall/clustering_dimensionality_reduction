@@ -162,7 +162,8 @@ En uzak iki nokta bulunur. İndirgenmiş veri noktaları arasındaki mesafeler h
 Ardından, bu dizinler kullanılarak orijinal veri noktaları (S_points) üzerindeki en uzak iki nokta (max_distance_points) elde edilir.
 En uzak iki nokta arasındaki uzaklık hesaplanır ve distance_between_points değişkenine atanır. Sonuçlar ekrana yazdırılır. 
 En uzak iki nokta ve aralarındaki uzaklık (max_distance_points, distance_between_points) ve yeni noktanın geometrik şekil üzerinde veya içinde olup olmadığı (is_inside_shape) yazdırılır.
-<br/> 
+<br/>
+
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/e988e17f-a810-4405-94a6-fc4229f8f914)
 
 Son olarak yeni nokta, en uzak nokta1 ve en uzak nokta 2 noktaları, ltsa ile indirgenmiş olan veri setinin scatter tablosundaki yayılımının üzerinde işaretlenmiştir.
