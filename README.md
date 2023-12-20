@@ -103,9 +103,6 @@ Bu aşama S_pointslerin ortalamasının alınma süreci. Bu bir sonraki adımda 
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/6aa2aea7-dfb0-42ad-8269-ef98f49162b2)
 
 
-
-
-
 Bu kısımda bir önceki aşamada bahsettiğimiz gibi veri setindeki özniteliklerin ölçeklerinin, her bir öznitelik sütunu kendi ortalaması etrafında simetrik olarak dağılmasını sağlamak için kullanılır.
 
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/a71e2f4f-46f1-45df-bed9-a5ba2ef3561c)
@@ -134,6 +131,7 @@ Sonrasında, V matrisi oluşturulur. V = Vh satırı, Vh matrisini V matrisine a
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/b0df3980-d7a1-419a-9a7f-2284ad296409)
 
  <br/>
+ 
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/d611abef-50fd-4251-b9b4-7023c086a161)
 
 
