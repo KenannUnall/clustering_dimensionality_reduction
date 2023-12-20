@@ -7,6 +7,8 @@ A.	En optimal küme sayısının(k) otomatik olarak seçilme işlemini her küme
 Silhoutte Skor: Kümeleme algoritmalarının performansını değerlendirmek için kullanılan bir ölçüdür. Sillhoutte skoru [-1,1] arası değer alır. Silhoutte skorunun yüksek olması verilerin kendi kümelerinde yoğunlaştığını ve diğer kümelerle bağlantılarının düşük benzerlikte olduklarını göstermektedir. 
 
 Aşağıdaki kodda 2 ile 10 değerleri arasında değer alan k için toplamda 9 silhouttte scoru elde edilmiş olup, bu skorlar arasında en yüksek değerin index değeri alınarak k değeri elde edilmiştir. 
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/8e7b950d-fa7b-48ca-8395-6eafd6402ab4) ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/68819a9a-623f-459d-8e83-1da8123a1613)
+
 
        
 En yüksek değer k değer 4’te iken elde edildiğinden dolayı küme sayısı 4 olarak seçilmiş ve doğru sonuç elde edilmiştir.
