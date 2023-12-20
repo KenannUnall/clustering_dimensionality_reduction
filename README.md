@@ -1,6 +1,6 @@
 <h1>1.</h1>
 Random olarak oluşturulan veri seti toplam 1000 adet veri ve 2 adet özellikten oluşmaktadır. Veri seti 4 farklı küme olacak şeklinde oluşturulmuştur. Verilerin özellikleri yönünden dağılımları aşağıdaki gibidir. 
- ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/8031bf85-93a9-4de5-87e5-200c51e228b1)
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/5f92e507-1899-4faf-9f92-aff78d2b4267)
 
 A.	En optimal küme sayısının(k) otomatik olarak seçilme işlemini her kümeleme işlemi sonucunda elde edilen silhoette_score değerine göre gerçekleştiriyoruz.
 
@@ -12,15 +12,20 @@ Aşağıdaki kodda 2 ile 10 değerleri arasında değer alan k için toplamda 9 
 
        
 En yüksek değer k değer 4’te iken elde edildiğinden dolayı küme sayısı 4 olarak seçilmiş ve doğru sonuç elde edilmiştir.
-Elde ettiğimiz optimal k değerine göre kümeleme işlemi gerçekleştiriyoruz. Son olarak görselleştirme işlemini gerçekleştiriyoruz. 
+Elde ettiğimiz optimal k değerine göre kümeleme işlemi gerçekleştiriyoruz. Son olarak görselleştirme işlemini gerçekleştiriyoruz.
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/bb2acc39-dd93-4173-b0bc-5994a6816ff2)
  
 Görselleştirme işleminde kümeleri ve merkezlerini scatter plot üzerinde gösterilmesi aşağıdaki gibidir.
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/66eefacc-49bb-40a4-98cd-c3fde637530f)
+
  
 B.	Girdi olarak alınan noktanın bir kümeye dahil olduğunu veya bu noktanın anomali olduğunun tespiti yapılmaktadır. Bu aşamada find_farhest_points fonksiyonu ile veri noktalarının merkezlere olan uzaklıkları hesaplanır ve en uzak noktaların indeksleri alınır. Classify_point fonksiyonu ile de noktanın threshold değerden büyük olup olmaması durumunda göre anomali olup olmadığı belirlenmektedir.
 
  
  
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/3c18d3f9-addf-492e-87b3-302f43b645a2)
 
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/163344e1-9cdd-497a-824a-616295284f0c)
 
 SORU 2
 Hiyarerşik kümelede bağlantı türü olarak ‘ward’, k-means algoritmasına en yakın değeri vermektedir. Aşağıdaki görselleştirmede de görünmektedir.  
