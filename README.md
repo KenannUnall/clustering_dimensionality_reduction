@@ -1,13 +1,17 @@
 <h1>1.</h1>
 Random olarak oluşturulan veri seti toplam 1000 adet veri ve 2 adet özellikten oluşmaktadır. Veri seti 4 farklı küme olacak şeklinde oluşturulmuştur. Verilerin özellikleri yönünden dağılımları aşağıdaki gibidir. 
-![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/5f92e507-1899-4faf-9f92-aff78d2b4267)
+
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/fa509fb7-7db2-4b7b-b068-923ab35b3def)
+
 
 A.	En optimal küme sayısının(k) otomatik olarak seçilme işlemini her kümeleme işlemi sonucunda elde edilen silhoette_score değerine göre gerçekleştiriyoruz.
 
 Silhoutte Skor: Kümeleme algoritmalarının performansını değerlendirmek için kullanılan bir ölçüdür. Sillhoutte skoru [-1,1] arası değer alır. Silhoutte skorunun yüksek olması verilerin kendi kümelerinde yoğunlaştığını ve diğer kümelerle bağlantılarının düşük benzerlikte olduklarını göstermektedir. 
 
-Aşağıdaki kodda 2 ile 10 değerleri arasında değer alan k için toplamda 9 silhouttte scoru elde edilmiş olup, bu skorlar arasında en yüksek değerin index değeri alınarak k değeri elde edilmiştir. 
-![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/8e7b950d-fa7b-48ca-8395-6eafd6402ab4) ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/68819a9a-623f-459d-8e83-1da8123a1613)
+Aşağıdaki kodda 2 ile 10 değerleri arasında değer alan k için toplamda 9 silhouttte scoru elde edilmiş olup, bu skorlar arasında en yüksek değerin index değeri alınarak k değeri elde edilmiştir.
+
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/8e7b950d-fa7b-48ca-8395-6eafd6402ab4) 
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/68819a9a-623f-459d-8e83-1da8123a1613)
 
 
        
