@@ -138,7 +138,7 @@ Sonrasında, V matrisi oluşturulur. V = Vh satırı, Vh matrisini V matrisine a
  
 
 
-SORU 5
+<h1>5.</h1>
 Bu kısımda kullanılan veri seti 4. Soruda kullanılan veri seti ile aynıdır.	
 <br/>
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/29b8b3d1-9732-4795-800c-304ce51ab14d)
