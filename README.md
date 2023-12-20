@@ -31,35 +31,52 @@ B.	Girdi olarak alınan noktanın bir kümeye dahil olduğunu veya bu noktanın 
 
 ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/163344e1-9cdd-497a-824a-616295284f0c)
 
-SORU 2
+<h1>SORU 2</h1>
 Hiyarerşik kümelede bağlantı türü olarak ‘ward’, k-means algoritmasına en yakın değeri vermektedir. Aşağıdaki görselleştirmede de görünmektedir.  
  
 
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/15136de2-cb83-47ec-a8ba-ca4b27e7064b)
 
 
 Optimal küme sayısının (k) hesaplanma işleminde silhoutte skor değeri hesaplanmaktadır. Maksimum silhoutte değerinin index değerine göre k değeri seçilmektedir. 
- 
+
+ ![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/a1ee0d6c-dad4-4471-a383-78bfd9dfa01a)
+
 
 Optimal k değeri silhouette skoru en yüksek olan k=4 olarak elde edilmiştir. Aşağıdaki grafikte de skor değerleri gösterilmektedir.
+
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/993a5498-c6eb-4515-824d-a824c913dc61)
+
  
 k=4 değerinde silhoutte skor 0.85’ in üzerinde bir değer ile en yüksek değerdedir.
 
 
 
-SORU 3
+<h1>SORU 3</h1>
 Veri seti 1000 örnekten ve noise 0.05 değerindedir. Gürültü (noise), makine öğrenimi ve veri üretimi bağlamında, verideki rastgele değişim ve bozulmaları ifade eder. Noise, oluşturulan veri setinin 0.05 değerinde bir gürültüye sahip olacağını belirtmektedir. Veri seti 2 farklı kümeden oluşmaktadır.
+
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/1671ca60-bcfb-438c-bf05-d2006e1a31be)
+
  
 Veri setinin özelliklerine göre dağılımları aşağıdaki görseldeki gibidir. Noise değeri arttıkça bu görüntü daha karmaşık bir hale almaya başlamaktadır. 
- 
+
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/3d6218de-21ec-43a7-adf9-2db3f570fff3)
+
+
 Veri setinin birinci ve ikinci özelliklerine göre dağılımlarına bakıldığında zincir biçiminde bir dağılım görülmektedir ve iki ayrı küme şeklindedir. 
 Average (Ortalama) Bağlantısı: Bu bağlantı yöntemi, her iki küme arasındaki uzaklıkların ortalamasını kullanarak küme birleştirmesi yapar. Yani, her iki kümenin elemanları arasındaki uzaklıkların ortalaması alınarak yeni bir küme oluşturulur. 
 Ward Bağlantısı: Bu bağlantı yöntemi, küme içi varyansları minimize etmeyi hedefler. İki kümenin birleştirilmesi durumunda, küme içi varyansın artması en az olan birleştirme seçilir. 
 Single (Tek) Bağlantısı: Bu yöntemde, iki küme arasındaki en yakın iki elemanın uzaklığı kullanılır. Yani, her iki kümenin elemanları arasındaki en küçük uzaklıkla birleştirme yapılır. 
 Complete (Tam) Bağlantısı: Bu yöntemde, iki küme arasındaki en uzak iki elemanın uzaklığı kullanılır. Yani, her iki kümenin elemanları arasındaki en büyük uzaklıkla birleştirme yapılır.
 
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/7ce28d27-4efe-4ec4-b84b-09c3fd48fb43)
+
  
 Tek bağlantı(single), kümenin bir zincir biçiminde olması durumunda en iyi sonucu verir. Tam bağlantı(complete), kürecikli/küresel kümeli veriler için daha uygundur.
- 
+
+![image](https://github.com/KenannUnall/clustering_dimensionality_reduction/assets/83499398/b3145940-7ec6-4015-914e-781ddea5a1c5)
+
+
 Grafikten de görüldüğü üzere optimal küme sayısı (k) değerini 2 olarak elde edilmiştir. Silhouttte skor değeri en yüksek k=2 iken.
 SORU 4
 Veri seti 1500 adet örnek ve 3 adet özellikten oluşmaktadır. Üç boyutlu olarak görselleştirildiğinde ‘S’ harfi şeklindedir.
